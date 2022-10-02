@@ -126,7 +126,7 @@ jobs:
           echo "::set-output name=status::success"
 
       - name: Rebuild Armbian for Amlogic s9xxx
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: ripncn/amlogic-s9xxx-armbian@main
         if: env.ARMBIAN_URL != '' && !cancelled()
         with:
           build_target: armbian
